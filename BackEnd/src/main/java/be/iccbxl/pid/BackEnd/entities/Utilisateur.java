@@ -1,20 +1,22 @@
 package be.iccbxl.pid.BackEnd.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
+import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.type.descriptor.jdbc.NVarcharJdbcType;
-import org.springframework.data.annotation.Id;
 
 @Data
 @Entity
 public class Utilisateur {
 
     @Id
-    private int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @Column
-    private NVarcharJdbcType userName;
+    private NVarcharJdbcType username;
+
+    @Column
+    private NVarcharJdbcType password;
 
 
 }
