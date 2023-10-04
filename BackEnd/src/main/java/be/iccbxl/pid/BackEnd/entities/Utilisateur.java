@@ -33,10 +33,4 @@ public class Utilisateur {
     private NVarcharJdbcType email;
 
 
-
-
-
-
-
-
 }
