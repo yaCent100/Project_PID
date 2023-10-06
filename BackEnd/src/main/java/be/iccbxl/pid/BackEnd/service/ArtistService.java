@@ -23,18 +23,22 @@ public class ArtistService{
     }
 
     public Artist getArtist(long id) {
+
         return artistRepository.findById(id);
     }
 
     public void addArtist(Artist artist) {
+
         artistRepository.save(artist);
     }
 
     public void updateArtist(long id, Artist artist) {
+
         artistRepository.save(artist);
     }
 
     public void deleteArtist(long id) {
+
         artistRepository.deleteById(id);
     }
 
