@@ -1,6 +1,6 @@
 package be.iccbxl.pid.BackEnd.restController;
 
-import be.iccbxl.pid.BackEnd.entities.Artist;
+import be.iccbxl.pid.BackEnd.model.Artist;
 import be.iccbxl.pid.BackEnd.service.ArtistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;

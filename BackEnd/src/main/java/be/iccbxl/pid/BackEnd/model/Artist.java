@@ -1,4 +1,4 @@
-package be.iccbxl.pid.BackEnd.entities;
+package be.iccbxl.pid.BackEnd.model;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -10,7 +10,7 @@ import lombok.*;
 @Table(name="artists")
 public class Artist {
     @Id
-    @GeneratedValue(strategy= GenerationType.AUTO)
+    @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String firstname;
     private String lastname;

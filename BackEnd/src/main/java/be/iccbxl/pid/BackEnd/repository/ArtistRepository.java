@@ -1,6 +1,6 @@
 package be.iccbxl.pid.BackEnd.repository;
 
-import be.iccbxl.pid.BackEnd.entities.Artist;
+import be.iccbxl.pid.BackEnd.model.Artist;
 import org.springframework.data.repository.CrudRepository;
 import java.util.List;
 

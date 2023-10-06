@@ -1,6 +1,6 @@
 package be.iccbxl.pid.BackEnd.service;
 
-import be.iccbxl.pid.BackEnd.entities.Artist;
+import be.iccbxl.pid.BackEnd.model.Artist;
 import be.iccbxl.pid.BackEnd.repository.ArtistRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
