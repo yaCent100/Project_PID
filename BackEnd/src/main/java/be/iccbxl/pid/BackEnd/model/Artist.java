@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 @Data
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor(force = true, access = AccessLevel.PROTECTED)
 @Entity
@@ -15,10 +16,7 @@ public class Artist {
     private String firstname;
     private String lastname;
 
-    @Override
-    public String toString() {
-        return firstname + " " + lastname;
-    }
+
 
 }
 

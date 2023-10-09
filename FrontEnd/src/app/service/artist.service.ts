@@ -16,7 +16,14 @@ private apiUrlArtist = 'http://localhost:8080/artists'
   constructor(private http: HttpClient) { }
 
   getAllArtists(): Observable<Artist[]> {
-      return this.http.get<Artist[]>(`${this.apiUrlArtist}`);
+      const url = `${this.apiUrlArtist}`
+      return this.http.get<Artist[]>(url);
     }
+
+    getArtistById(id: number): Observable<Artist> {
+       const url = `${this.apiUrlArtist}/${id}`;
+       return this.http.get<Artist>(url);
+     }
+
 
 }

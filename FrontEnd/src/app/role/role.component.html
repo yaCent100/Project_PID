@@ -1,0 +1,8 @@
+<h1>Liste des rôles</h1>
+
+<ul *ngIf="roles.length > 0">
+  <li *ngFor="let role of roles">
+    <span>{{ role.role }}</span>
+    <a [routerLink]="['/roles', role.id]">View</a>
+  </li>
+</ul>

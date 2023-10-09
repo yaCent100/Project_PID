@@ -15,7 +15,7 @@
         <tr>
           <td>{{artist.id}}</td>
           <td>{{artist.firstname}}</td>
-          <td>{{artist.lastname}}</td>
+          <td><a [routerLink]="['/artist', artist.id]">{{artist.lastname}}</a></td>
         </tr>
         </tbody>
       </table>

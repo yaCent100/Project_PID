@@ -1,0 +1,8 @@
+<h2>Fiche du type</h2>
+
+<div *ngIf="type">
+  <p><strong>ID:</strong> {{ type.id }}</p>
+  <p><strong>Nom:</strong> {{ type.type }}</p>
+</div>
+
+<button (click)="goBackToList()">Retour à la liste des types</button>

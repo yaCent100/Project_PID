@@ -1,0 +1,8 @@
+<h1>Liste des localités</h1>
+
+<ul *ngIf="localities.length > 0">
+  <li *ngFor="let locality of localities">
+    <span>{{ locality.postalCode }} {{ locality.locality }}</span>
+    <a [routerLink]="['/localities', locality.id]"> View</a>
+  </li>
+</ul>

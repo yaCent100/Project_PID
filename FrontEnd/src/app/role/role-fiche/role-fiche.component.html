@@ -1,0 +1,9 @@
+<h1>Détails du rôle</h1>
+
+<div *ngIf="role">
+  <p><strong>ID :</strong> {{ role.id }}</p>
+  <p><strong>Nom du rôle :</strong> {{ role.role }}</p>
+  <!-- Autres détails du rôle que vous souhaitez afficher -->
+</div>
+
+<button (click)="goBackToList()">Retour à la liste des rôles</button>

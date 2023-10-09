@@ -1,0 +1,6 @@
+<h1>Liste des types</h1>
+<ul>
+  <li *ngFor="let type of types">
+    {{ type.type }} <a [routerLink]="['/types', type.id]">View</a>
+  </li>
+</ul>

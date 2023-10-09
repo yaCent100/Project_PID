@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ArtistService } from '../service/artist.service';
 import { Artist } from '../model/artist.model';
-
+import { Router } from '@angular/router';
 
 
 @Component({

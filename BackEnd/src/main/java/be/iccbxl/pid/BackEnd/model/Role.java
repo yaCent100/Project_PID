@@ -1,23 +1,23 @@
 package be.iccbxl.pid.BackEnd.model;
 
-import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Table;
+import lombok.*;
+import jakarta.persistence.Id;
+
 
 @Data
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor(force = true, access = AccessLevel.PROTECTED)
 @Entity
 @Table(name="roles")
 public class Role {
-
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
+    private String role;
 
-    private boolean admin;
-    private boolean member;
-    private boolean affiliate;
 }

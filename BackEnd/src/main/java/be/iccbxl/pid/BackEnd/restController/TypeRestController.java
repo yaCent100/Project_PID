@@ -1,7 +1,8 @@
 package be.iccbxl.pid.BackEnd.restController;
 
 import be.iccbxl.pid.BackEnd.model.Artist;
-import be.iccbxl.pid.BackEnd.service.ArtistService;
+import be.iccbxl.pid.BackEnd.model.Type;
+import be.iccbxl.pid.BackEnd.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -9,21 +10,23 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @CrossOrigin
-public class ArtistRestController {
+public class TypeRestController {
 
     @Autowired
-    ArtistService artistService;
+    TypeService typeService;
 
-    @GetMapping("/artists")
-    public List<Artist> index() {
-        return artistService.getAllArtists();
+    @GetMapping("/types")
+    public List<Type> index() {
+        return typeService.getAllTypes();
     }
-    @GetMapping("/artists/{id}")
-    public Artist show(@PathVariable("id") Long id) {
-        return artistService.getArtist(id);
+
+    @GetMapping("/types/{id}")
+    public Optional<Type> show(@PathVariable("id") Long id) {
+        return typeService.getType(id);
     }
 
 

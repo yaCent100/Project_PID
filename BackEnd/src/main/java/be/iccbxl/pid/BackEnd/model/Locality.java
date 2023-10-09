@@ -1,12 +1,10 @@
 package be.iccbxl.pid.BackEnd.model;
 
 import jakarta.persistence.*;
-import lombok.AccessLevel;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Data
+@ToString
 @AllArgsConstructor
 @NoArgsConstructor(force = true, access = AccessLevel.PROTECTED)
 @Entity
@@ -16,8 +14,7 @@ public class Locality {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
-
-    private int locality;
-
+    private String postalCode;
+    private String locality;
 
 }

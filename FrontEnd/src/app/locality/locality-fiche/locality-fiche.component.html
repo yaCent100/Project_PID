@@ -1,0 +1,10 @@
+<h1>Fiche d'une localité</h1>
+
+<div *ngIf="locality">
+  <p><strong>ID:</strong> {{ locality.id }}</p>
+  <p><strong>Nom:</strong> {{ locality.locality }}</p>
+  <p><strong>Code postal:</strong> {{ locality.postalCode }}</p>
+  <!-- Autres détails de localité que vous souhaitez afficher -->
+</div>
+
+<button (click)="goBackToList()">Retour à la liste des localités</button>
