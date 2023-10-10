@@ -12,7 +12,7 @@ import java.util.List;
 @Service
 public class ArtistService{
     @Autowired
-    ArtistRepository artistRepository;
+    private ArtistRepository artistRepository;
 
     public List<Artist> getAllArtists() {
         List<Artist> artists = new ArrayList<>();
